@@ -5,31 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Het paard van Sinterklaas</title>
 <meta name="description" content="Hulp en contact voor de app Het paard van Sinterklaas.">
+<meta name="theme-color" content="#0D1436">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="logo.png">
 </head>
 <body>
-<main>
-<header>
-<img src="logo.png" alt="">
+<header class="avond">
+<svg class="slinger" aria-hidden="true" focusable="false">
+<defs><pattern id="vlaggetjes" width="360" height="90" patternUnits="userSpaceOnUse">
+<path d="M0 10 Q180 62 360 10" fill="none" stroke="#F6D67C" stroke-width="3"/>
+<path d="M8 12.3 L52 22.9 L30 66 Z" fill="#C41E30"/>
+<path d="M68 25.9 L112 32.3 L90 77.5 Z" fill="#F1C043"/>
+<path d="M128 33.8 L172 35.9 L150 83 Z" fill="#FFF6DA"/>
+<path d="M188 35.9 L232 33.8 L210 83 Z" fill="#C41E30"/>
+<path d="M248 32.3 L292 25.9 L270 77.5 Z" fill="#F1C043"/>
+<path d="M308 22.9 L352 12.3 L330 66 Z" fill="#FFF6DA"/>
+</pattern></defs>
+<rect width="100%" height="90" fill="url(#vlaggetjes)"/>
+</svg>
+<div class="kop">
+<a class="logo" href="index.html" aria-label="Het paard van Sinterklaas, naar de beginpagina"><img src="logo.png" alt="" width="76" height="76"></a>
 <h1>Het paard van Sinterklaas</h1>
+<p class="onder">Zorg voor je eigen paard, tot pakjesavond</p>
+</div>
+<svg class="dak" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Sinterklaas, zijn paard en Piet op het dak, bij maanlicht">
+<defs>
+<path id="ster" d="M0,-1 L0.29,-0.4 L0.95,-0.31 L0.47,0.15 L0.59,0.81 L0,0.5 L-0.59,0.81 L-0.47,0.15 L-0.95,-0.31 L-0.29,-0.4 Z"/>
+<pattern id="tegels" width="36" height="25" patternUnits="userSpaceOnUse">
+<rect width="36" height="25" fill="#A8434C"/>
+<path d="M0 0 a18 18 0 0 0 36 0" fill="#BF5760" stroke="#7E2B36" stroke-width="1.5"/>
+<path d="M-18 12.5 a18 18 0 0 0 36 0 M18 12.5 a18 18 0 0 0 36 0" fill="#B44C56" stroke="#7E2B36" stroke-width="1.5"/>
+</pattern>
+<pattern id="huizen" width="520" height="170" patternUnits="userSpaceOnUse" patternTransform="translate(40 210)">
+<g fill="#131A47">
+<path d="M0 170 V70 H30 V45 H60 V20 H90 V45 H120 V70 H150 V170 Z"/>
+<path d="M150 170 V85 L225 30 L300 85 V170 Z"/><rect x="178" y="38" width="22" height="44"/>
+<path d="M300 170 V62 H330 Q360 8 390 62 H420 V170 Z"/>
+<path d="M420 170 V98 L470 58 L520 98 V170 Z"/>
+</g>
+<g fill="#FFD98A"><rect x="38" y="92" width="24" height="32" rx="3"/><rect x="212" y="98" width="26" height="34" rx="3"/><rect x="346" y="84" width="28" height="36" rx="3"/><rect x="458" y="110" width="24" height="30" rx="3"/></g>
+<rect x="88" y="92" width="24" height="32" rx="3" fill="#27306B"/>
+</pattern>
+<linearGradient id="goud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE08E"/><stop offset="1" stop-color="#D9A21B"/></linearGradient>
+<radialGradient id="maan" cx="42%" cy="38%" r="70%"><stop offset="0" stop-color="#FFF7D6"/><stop offset=".62" stop-color="#FBE39A"/><stop offset="1" stop-color="#EFC457"/></radialGradient>
+<clipPath id="piet-boven"><rect x="718" y="150" width="66" height="89"/></clipPath>
+</defs>
+<circle cx="575" cy="150" r="172" fill="#FBE39A" opacity=".06"/>
+<circle cx="575" cy="150" r="148" fill="#FBE39A" opacity=".10"/>
+<circle cx="575" cy="150" r="125" fill="url(#maan)"/>
+<g fill="#FFF3C4">
+<use class="twinkel" href="#ster" transform="translate(338 96) scale(9)"/>
+<use class="twinkel" href="#ster" transform="translate(872 74) scale(10)"/>
+<use class="twinkel" href="#ster" transform="translate(120 70) scale(12)"/>
+<use class="twinkel" href="#ster" transform="translate(246 168) scale(7)"/>
+<use class="twinkel" href="#ster" transform="translate(1012 150) scale(8)"/>
+<use class="twinkel" href="#ster" transform="translate(1112 60) scale(11)"/>
+<use class="twinkel" href="#ster" transform="translate(-180 110) scale(10)"/>
+<use class="twinkel" href="#ster" transform="translate(-420 60) scale(8)"/>
+<use class="twinkel" href="#ster" transform="translate(1390 120) scale(9)"/>
+<use class="twinkel" href="#ster" transform="translate(1640 56) scale(11)"/>
+<use class="twinkel" href="#ster" transform="translate(-700 140) scale(9)"/>
+<use class="twinkel" href="#ster" transform="translate(1900 150) scale(8)"/>
+</g>
+<rect x="-1600" y="210" width="1940" height="170" fill="url(#huizen)"/>
+<rect x="860" y="210" width="1940" height="170" fill="url(#huizen)"/>
+<path d="M290 380 V348 L352 318 H848 L910 348 V380 Z" fill="url(#tegels)"/>
+<path d="M352 318 H848" stroke="#E08A8E" stroke-width="5" stroke-linecap="round"/>
+<path d="M290 348 L352 318 M848 318 L910 348" stroke="#7E2B36" stroke-width="3.5" stroke-linecap="round"/>
+<g transform="translate(358 276) scale(.28)">
+<rect x="0" y="40" width="150" height="110" rx="12" fill="#C41E30"/><rect x="-10" y="14" width="170" height="44" rx="10" fill="#E2495A"/><rect x="62" y="14" width="26" height="136" fill="url(#goud)"/>
+<path d="M75 14 c-18 -42 -64 -40 -56 -12 c6 20 34 18 56 12 z m0 0 c18 -42 64 -40 56 -12 c-6 20 -34 18 -56 12 z" fill="url(#goud)"/>
+</g>
+<g transform="translate(669 291) scale(.19)">
+<rect x="0" y="40" width="150" height="110" rx="12" fill="#3E9B4F"/><rect x="-10" y="14" width="170" height="44" rx="10" fill="#58B869"/><rect x="62" y="14" width="26" height="136" fill="#FFF6DA"/>
+<path d="M75 14 c-18 -42 -64 -40 -56 -12 c6 20 34 18 56 12 z m0 0 c18 -42 64 -40 56 -12 c-6 20 -34 18 -56 12 z" fill="#FFF6DA"/>
+</g>
+<image class="wie" href="img/piet.webp" x="718" y="172" width="84" height="134" clip-path="url(#piet-boven)"/>
+<rect x="703" y="246" width="85" height="74" fill="#B5483F" stroke="#7E2E2A" stroke-width="2"/>
+<path d="M703 271 H788 M703 296 H788 M746 246 V271 M724 271 V296 M767 271 V296 M746 296 V320" stroke="#E2A79B" stroke-width="1.5" opacity=".7"/>
+<rect x="695" y="237" width="101" height="15" rx="3" fill="#9FA4DB" stroke="#6F74B4" stroke-width="2"/>
+<image class="wie" href="img/sinterklaas.webp" x="404" y="32" width="150" height="290"/>
+<image class="wie wiebel" href="img/paard.webp" x="464" y="80" width="249" height="249"/>
+</svg>
 </header>
+<main>
 <article>
-<p>Het paard van Sinterklaas is een app voor kinderen van ongeveer 4 tot 10 jaar. Je kind verzorgt een eigen paard: voeren, aaien, poetsen en samen spelen. 's Nachts gaat het paard met Sinterklaas en Piet de daken op.</p>
+<p class="intro">Het paard van Sinterklaas is een app voor kinderen van ongeveer 4 tot 10 jaar. Je kind verzorgt een eigen paard: voeren, aaien, poetsen en samen spelen. 's Nachts gaat het paard met Sinterklaas en Piet de daken op.</p>
 
 <h2>Hulp en contact</h2>
 <p>Heb je een vraag over de app, werkt er iets niet of heb je een idee? Stuur een e-mail naar <a href="mailto:info@dronten.ai">info@dronten.ai</a>. Vermeld erbij welk toestel je gebruikt, dan kan ik je sneller helpen.</p>
 
 <h2>Veelgestelde vragen</h2>
-<p><strong>Kost de app geld?</strong><br>Nee. De app is gratis, zonder reclame en zonder aankopen. De winkel in de app werkt met sterren die je kind in het spel verdient.</p>
-<p><strong>Heeft de app internet nodig?</strong><br>Nee. Alles zit in de app zelf en er worden geen gegevens verzameld.</p>
-<p><strong>Waar vind ik de instellingen voor ouders?</strong><br>Onderaan het scherm Thuis staat de knop <em>Voor ouders</em>. Daar stel je in wanneer de schoen gezet mag worden, en zet je geluid, trillen, voorlezen en herinneringen aan of uit.</p>
-<p><strong>Kan ik opnieuw beginnen?</strong><br>Ja, bij <em>Voor ouders</em>. Verwijder je de app, dan is de voortgang ook weg.</p>
+<div class="vraag"><strong>Kost de app geld?</strong><p>Nee. De app is gratis, zonder reclame en zonder aankopen. De winkel in de app werkt met sterren die je kind in het spel verdient.</p></div>
+<div class="vraag"><strong>Heeft de app internet nodig?</strong><p>Nee. Alles zit in de app zelf en er worden geen gegevens verzameld.</p></div>
+<div class="vraag"><strong>Waar vind ik de instellingen voor ouders?</strong><p>Onderaan het scherm Thuis staat de knop <em>Voor ouders</em>. Daar stel je in wanneer de schoen gezet mag worden, en zet je geluid, trillen, voorlezen en herinneringen aan of uit.</p></div>
+<div class="vraag"><strong>Kan ik opnieuw beginnen?</strong><p>Ja, bij <em>Voor ouders</em>. Verwijder je de app, dan is de voortgang ook weg.</p></div>
 
 <h2>Privacy</h2>
 <p>De app verzamelt geen gegevens. Lees het <a href="privacybeleid.html">privacybeleid</a>.</p>
 </article>
-<footer>© 2026 Enrico Clein</footer>
 </main>
+<footer><span class="sterren" aria-hidden="true">★★★</span><a href="privacybeleid.html">Privacybeleid</a> · © 2026 Enrico Clein</footer>
 </body>
 </html>
